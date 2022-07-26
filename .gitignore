@@ -4,4 +4,6 @@
 /data/push_notifications.test.json
 /data/push_notifications.json
 /obj/test
+/package-lock.json
 /docker/id_rsa*
+/docker/.npmrc
