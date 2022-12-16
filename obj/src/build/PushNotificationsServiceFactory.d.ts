@@ -5,6 +5,6 @@ export declare class PushNotificationsServiceFactory extends Factory {
     static NullConnectorDescriptor: Descriptor;
     static SocketIOConnectorDescriptor: Descriptor;
     static ControllerDescriptor: Descriptor;
-    static HttpServiceDescriptor: Descriptor;
+    static CmdHttpServiceDescriptor: Descriptor;
     constructor();
 }

@@ -1,1 +1,1 @@
-export { PushNotificationsHttpServiceV1 } from './PushNotificationsHttpServiceV1';
+export { PushNotificationsCommandableHttpServiceV1 as PushNotificationsHttpServiceV1 } from './PushNotificationsCommandableHttpServiceV1';

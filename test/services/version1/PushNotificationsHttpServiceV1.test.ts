@@ -8,7 +8,7 @@ import { NotificationV1 } from '../../../src/data/version1/NotificationV1';
 import { NotificationPriorityV1 } from '../../../src/data/version1/NotificationPriorityV1';
 import { PushNotificationsNullConnector } from '../../../src/connectors/PushNotificationsNullConnector';
 import { PushNotificationsController } from '../../../src/logic/PushNotificationsController';
-import { PushNotificationsHttpServiceV1 } from '../../../src/services/version1/PushNotificationsHttpServiceV1';
+import { PushNotificationsCommandableHttpServiceV1 } from '../../../src/services/version1/PushNotificationsCommandableHttpServiceV1';
 
 let restConfig = ConfigParams.fromTuples(
     "connection.protocol", "http",
@@ -17,7 +17,7 @@ let restConfig = ConfigParams.fromTuples(
 );
 
 suite('PushNotificationsHttpServiceV1', ()=> {
-    let service: PushNotificationsHttpServiceV1;
+    let service: PushNotificationsCommandableHttpServiceV1;
 
     let rest: any;
 
@@ -46,7 +46,7 @@ suite('PushNotificationsHttpServiceV1', ()=> {
         let connector = new PushNotificationsNullConnector();
         let controller = new PushNotificationsController();
 
-        service = new PushNotificationsHttpServiceV1();
+        service = new PushNotificationsCommandableHttpServiceV1();
         service.configure(restConfig);
 
         let references: References = References.fromTuples(
