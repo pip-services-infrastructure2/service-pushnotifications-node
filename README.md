@@ -80,7 +80,7 @@ Example of microservice configuration
 
 - descriptor: "service-pushnotifications:controller:default:default:1.0"
 
-- descriptor: "service-pushnotifications:service:http:default:1.0"
+- descriptor: "service-pushnotifications:service:commandable-http:default:1.0"
   connection:
     protocol: "http"
     host: "0.0.0.0"
